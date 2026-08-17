@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 2: User Needs &amp; Wants | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="../index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 2 of 10 · Feeds Folio Section 2</span>
+      <h1>User Needs &amp; Wants</h1>
+      <p class="lede">Good design starts with a real user. Analyse all three teacher personas, then choose who you're designing for.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can analyse all three teacher personas and justify, with evidence, which one your final CyberPet design will suit.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="card">
+      <p style="margin-top:0;">This is the <strong>Empathise</strong> and <strong>Define</strong> stage of the Human-Centred Design process (see Phase 5). Good design starts with understanding a real user's needs, preferences and context — not just what looks good to you.</p>
+      <p style="margin-bottom:0;">You must design for <strong>one</strong> of the three teachers below — but you must analyse <strong>all three</strong> before choosing, and justify your choice in your folio.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Mrs Wong</h3>
+        <p class="hint" style="margin-top:-0.5rem;">Year 7 English Teacher, 32</p>
+        <ul>
+          <li>Soft greens &amp; pastel tones</li>
+          <li>Pilates, journalling, reading</li>
+          <li>Calm, organised, reflective</li>
+        </ul>
+        <p><strong>Design feel:</strong> gentle, calm, uncluttered</p>
+      </div>
+      <div class="card gold">
+        <h3>Mr Brolly</h3>
+        <p class="hint" style="margin-top:-0.5rem;">Year 7 Science Teacher, 28</p>
+        <ul>
+          <li>Bright blues &amp; neon accents</li>
+          <li>Touch football, STEM clubs</li>
+          <li>Energetic, playful</li>
+        </ul>
+        <p><strong>Design feel:</strong> fun, bold, dynamic</p>
+      </div>
+      <div class="card">
+        <h3>Mrs Nora</h3>
+        <p class="hint" style="margin-top:-0.5rem;">Pastoral Care Teacher, 54</p>
+        <ul>
+          <li>Warm neutrals &amp; purples</li>
+          <li>Gardening, knitting, community work</li>
+          <li>Warm, supportive, safe</li>
+        </ul>
+        <p><strong>Design feel:</strong> comforting, safe, caring</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Read</span> <a href="https://ischool.syracuse.edu/what-is-human-centered-design/" target="_blank" rel="noopener">What is Human-Centred Design?</a> — see the Empathise and Define stages in particular.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;">For <strong>each</strong> of the three personas, note: what colour palette would suit them, what form/shape would feel right on their desk, and how their classroom vibe should show up in your mood-display pattern (gentle pulsing vs. bright flashing, for example).</p>
+      <p style="margin-bottom:0;">Then choose <strong>one</strong> persona and justify your choice.</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label">Persona analysis — Mrs Wong</label>
+      <textarea data-autosave="wong" rows="3" placeholder="Colour, form, mood-display style suited to Mrs Wong..."></textarea>
+
+      <label class="field-label">Persona analysis — Mr Brolly</label>
+      <textarea data-autosave="brolly" rows="3" placeholder="Colour, form, mood-display style suited to Mr Brolly..."></textarea>
+
+      <label class="field-label">Persona analysis — Mrs Nora</label>
+      <textarea data-autosave="nora" rows="3" placeholder="Colour, form, mood-display style suited to Mrs Nora..."></textarea>
+
+      <label class="field-label" for="chosen">My chosen persona and justification</label>
+      <textarea id="chosen" data-autosave="chosenJustification" rows="5" placeholder="Which persona, and why — link to colour, form and material choices..."></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I have analysed all three personas above</li>
+        <li><input type="checkbox" data-autosave="chk2"> I have chosen one persona and written a clear justification</li>
+        <li><input type="checkbox" data-autosave="chk3"> My justification links to colour, form and material choices</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase02-User-Needs-Personas')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>In Class OneNote, go to your personal section → Section 2 — User Persona Analysis.</li>
+        <li>Insert → File Printout, and choose the downloaded PDF.</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">This work can be completed independently — no equipment needed, just this page and your response. Bring any questions about material options to your next practical lesson.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="01-the-challenge.html">← Phase 1</a>
+      <a class="btn" href="03-success-criteria.html">Phase 3: Success Criteria →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

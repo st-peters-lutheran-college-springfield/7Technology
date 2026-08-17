@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 6: Manufacturing Techniques | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="../index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 6 of 10 · Feeds Folio Section 6</span>
+      <h1>Manufacturing Techniques</h1>
+      <p class="lede">Additive manufacturing (3D printing) and subtractive manufacturing (Trotec laser cutting) — how each works, and how to use them safely.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can explain two manufacturing approaches and how they apply safely to your design.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Additive manufacturing — 3D printing</h3>
+        <p style="margin-top:0;">Builds an object up, layer by layer, from a digital model (your TinkerCad file — see Phase 7).</p>
+        <ul style="margin-bottom:0;">
+          <li>Good for precise, complex, small parts — like an internal mount or a decorative feature</li>
+          <li>Slower to produce than cutting a flat sheet</li>
+          <li>Uses plastic filament, layer by layer</li>
+        </ul>
+      </div>
+      <div class="card gold">
+        <h3>Subtractive manufacturing — laser cutting</h3>
+        <p style="margin-top:0;">Removes material from a larger sheet (like plywood or acrylic) using a laser, guided by a digital cutting file.</p>
+        <ul style="margin-bottom:0;">
+          <li>Good for flat panels, cases and structural pieces</li>
+          <li>Fast and very precise for 2D shapes</li>
+          <li>Our laser cutters are Trotec machines — see the safety rules below</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card dark">
+      <h3 style="margin-top:0;">Laser cutter safety — non-negotiable</h3>
+      <ul style="margin-bottom:0;">
+        <li>Never leave a running laser cutter unattended — it must be watched the entire time it is cutting</li>
+        <li>Always wear safety glasses and keep the machine cover closed while it's operating</li>
+        <li>Only teacher-approved materials go near the laser — some materials (like PVC) release dangerous fumes and must never be used</li>
+        <li>Confirm the fume extraction system is running before cutting or engraving</li>
+        <li>Only use the laser cutter after a teacher safety demonstration — never independently the first time</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Safety</span> <a href="https://mytrotec.ca/edu-laser-safety/" target="_blank" rel="noopener">Trotec EDU Laser Safety</a> — safety guidance written specifically for school laser use.</li>
+      <li><span class="tag">FAQ</span> <a href="https://www.troteclaser.com/en-us/resources/faqs/how-safe-is-a-laser-engraver" target="_blank" rel="noopener">How safe is a laser engraver?</a> — Trotec's official safety FAQ.</li>
+      <li><span class="tag">Datasheets</span> <a href="https://www.troteclaser.com/en-us/helpcenter/downloads/datasheets/material-datasheets" target="_blank" rel="noopener">Trotec material safety &amp; technical datasheets</a> — check any material before it goes near the laser.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;">For your chosen design (from Phase 8), decide which parts would use additive manufacturing, which would use subtractive manufacturing, and why. You don't have to physically make your product using both methods — you can explain how each could be used appropriately.</p>
+      <p style="margin-bottom:0;">List at least three safe work practices that apply to the tools and materials you plan to use.</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label">Which parts use additive manufacturing (3D printing), and why?</label>
+      <textarea data-autosave="additive" rows="3" placeholder="..."></textarea>
+
+      <label class="field-label">Which parts use subtractive manufacturing (laser cutting), and why?</label>
+      <textarea data-autosave="subtractive" rows="3" placeholder="..."></textarea>
+
+      <label class="field-label">Safety practices I will follow</label>
+      <textarea data-autosave="safety" rows="3" placeholder="List at least three..."></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I can explain the difference between additive and subtractive manufacturing</li>
+        <li><input type="checkbox" data-autosave="chk2"> I have matched a manufacturing method to each part of my design</li>
+        <li><input type="checkbox" data-autosave="chk3"> I have listed relevant safety practices</li>
+        <li><input type="checkbox" data-autosave="chk4"> I understand I must never use the laser cutter without a teacher demonstration first</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase06-Manufacturing-Techniques')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>In Class OneNote, go to your personal section → Section 6 — Manufacturing Decisions.</li>
+        <li>Insert → File Printout, and choose the downloaded PDF.</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">If you missed a workshop/tool demonstration lesson, do not use any tool you haven't been shown how to use safely. Complete the written response here, then arrange a catch-up safety briefing with your teacher before any hands-on making.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="05-design-elements-principles.html">← Phase 5</a>
+      <a class="btn" href="07-tinkercad-3d-sketching.html">Phase 7: TinkerCad &amp; 3D Sketching →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
