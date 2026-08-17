@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 3: Generating Success Criteria | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="../index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 3 of 10 · Feeds Folio Section 5</span>
+      <h1>Generating Success Criteria</h1>
+      <p class="lede">Turn the design brief into testable statements you can actually check your work against later.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can write clear, testable design criteria for your CyberPet, including sustainability.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>What is a design criterion?</h3>
+        <p>A design criterion is a <strong>testable statement</strong> describing what your finished product must do or be. Good criteria are specific enough that someone could check "yes" or "no" against them once the product is finished.</p>
+        <p style="margin-bottom:0;"><strong>Weak:</strong> "It should look nice."<br><strong>Strong:</strong> "The case fits within a 15 × 15 cm footprint and fully encloses the micro:bit, GlowBit and battery pack."</p>
+      </div>
+      <div class="card gold">
+        <h3>Sustainability — mandatory</h3>
+        <p style="margin-top:0;">Every folio must address all three dimensions:</p>
+        <ul style="margin-bottom:0;">
+          <li><strong>Social</strong> — supports wellbeing, inclusive, non-judgemental</li>
+          <li><strong>Environmental</strong> — responsible materials, reduced waste, durability</li>
+          <li><strong>Economic</strong> — cost-effective, repairable, scalable</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Read</span> <a href="https://guides.lib.berkeley.edu/design" target="_blank" rel="noopener">Design Fundamentals guide (UC Berkeley Library)</a> — background on how designers set and use criteria.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;">Write at least <strong>six</strong> design criteria — start from the non-negotiable constraints, then add your own persona-based goals (colour, texture, feel).</p>
+      <p style="margin-bottom:0;">Then write one short paragraph for <strong>each</strong> sustainability dimension, linking it to an actual decision you've made — not a generic claim.</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label" for="criteria">My design criteria (at least six)</label>
+      <textarea id="criteria" data-autosave="criteria" rows="6" placeholder="1. ...&#10;2. ...&#10;3. ..."></textarea>
+
+      <label class="field-label">Sustainability — Social</label>
+      <textarea data-autosave="sustSocial" rows="3" placeholder="How does your design support wellbeing and inclusion, specifically?"></textarea>
+
+      <label class="field-label">Sustainability — Environmental</label>
+      <textarea data-autosave="sustEnv" rows="3" placeholder="What material/waste/durability decision have you made?"></textarea>
+
+      <label class="field-label">Sustainability — Economic</label>
+      <textarea data-autosave="sustEcon" rows="3" placeholder="How is your design cost-effective, repairable or scalable?"></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I have written at least six specific, testable criteria</li>
+        <li><input type="checkbox" data-autosave="chk2"> My criteria include all the non-negotiable constraints</li>
+        <li><input type="checkbox" data-autosave="chk3"> I've written a statement for social, environmental AND economic sustainability</li>
+        <li><input type="checkbox" data-autosave="chk4"> Each sustainability statement links to a specific decision, not a generic claim</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase03-Success-Criteria')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>In Class OneNote, go to your personal section → Section 5 — Design Criteria (including sustainability).</li>
+        <li>Insert → File Printout, and choose the downloaded PDF.</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">This is a writing task you can complete independently once you've done Phases 1–2. Bring your draft criteria to your next lesson for teacher feedback.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="02-user-needs-personas.html">← Phase 2</a>
+      <a class="btn" href="04-exploring-materials.html">Phase 4: Exploring Materials →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

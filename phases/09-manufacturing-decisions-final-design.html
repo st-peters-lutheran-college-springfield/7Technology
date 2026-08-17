@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 9: Final Design &amp; Manufacturing Plan | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="../index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 9 of 10 · Feeds Folio Sections 6 &amp; 8</span>
+      <h1>Final Design &amp; Manufacturing Plan</h1>
+      <p class="lede">Select your one final idea, document exactly how it will be made, and describe it clearly enough for anyone to understand.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can justify a final design choice, plan its manufacture safely, and describe the finished design clearly using technical language.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="card">
+      <h3>What your manufacturing plan needs</h3>
+      <div class="step-grid">
+        <div class="step"><div class="num">1</div><strong>Materials</strong><p style="margin:0.4rem 0 0;">Which approved material(s), and why (link back to Phase 4).</p></div>
+        <div class="step"><div class="num">2</div><strong>Method(s)</strong><p style="margin:0.4rem 0 0;">Additive, subtractive, hand tools, or a mix (link back to Phase 6).</p></div>
+        <div class="step"><div class="num">3</div><strong>Assembly</strong><p style="margin:0.4rem 0 0;">How pieces fit together and how electronics mount securely.</p></div>
+        <div class="step"><div class="num">4</div><strong>Safety</strong><p style="margin:0.4rem 0 0;">Which safe practices apply to your tools and materials.</p></div>
+      </div>
+    </div>
+    <div class="card gold">
+      <h3>Fitting the electronics</h3>
+      <p style="margin-bottom:0;">Your case has to securely house a real micro:bit, GlowBit and battery pack — not just look good on paper. Check real dimensions and mounting options before finalising your case size.</p>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Guide</span> <a href="https://kitronik.co.uk/blogs/resources/beginners-microbit-user-guide" target="_blank" rel="noopener">The micro:bit User Guide for Absolute Beginners (Kitronik)</a> — hardware basics and dimensions.</li>
+      <li><span class="tag">Product</span> <a href="https://kitronik.co.uk/products/5603-zip-zip-leds-add-on-pack-for-kitronik-inventors-kit-for-microbit" target="_blank" rel="noopener">ZIP LEDs Add-On Pack (Kitronik)</a> — the type of addressable LED strip your GlowBit uses.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;">Look back at your sketches (Phase 8) and choose the <strong>one</strong> idea you will take forward. Justify why, referencing your persona, criteria and the idea checklist.</p>
+      <p style="margin-bottom:0;">Then write your manufacturing plan, and a final design description someone unfamiliar with the project could understand — including how your design meets every non-negotiable constraint.</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label">My final idea, and why I chose it</label>
+      <textarea data-autosave="finalIdea" rows="4" placeholder="..."></textarea>
+
+      <label class="field-label">Manufacturing plan (materials, methods, assembly, safety)</label>
+      <textarea data-autosave="mfgPlan" rows="5" placeholder="..."></textarea>
+
+      <label class="field-label">Final design description</label>
+      <textarea data-autosave="finalDesc" rows="5" placeholder="Overview, key features, and how it meets every non-negotiable constraint..."></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I have selected and justified one final design idea</li>
+        <li><input type="checkbox" data-autosave="chk2"> I have documented materials, methods, assembly and safety</li>
+        <li><input type="checkbox" data-autosave="chk3"> I have checked my design against every non-negotiable constraint</li>
+        <li><input type="checkbox" data-autosave="chk4"> I have used correct technical terms throughout</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase09-Final-Design-Manufacturing')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>In Class OneNote, go to your personal section → Sections 6 (Manufacturing Decisions) and 8 (Final Design Description).</li>
+        <li>Insert → File Printout, and choose the downloaded PDF (you can add it to both sections).</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">If you missed a workshop/tool demonstration lesson, do not use any tool you haven't been shown how to use safely. Write your plan from this page, then arrange a catch-up safety briefing with your teacher before any hands-on making.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="08-sketching-annotating.html">← Phase 8</a>
+      <a class="btn" href="10-testing-evaluation.html">Phase 10: Testing &amp; Evaluating →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

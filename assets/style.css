@@ -1,0 +1,217 @@
+/* SPLC Springfield — CyberPet Flipped Classroom — shared styles */
+:root {
+  --maroon: #7B2D3E;
+  --maroon-dark: #5c2130;
+  --gold: #BD9B60;
+  --gold-tint: #F1E6D3;
+  --cream-tint: #FBF3E6;
+  --charcoal: #1D252D;
+  --white: #FFFFFF;
+  --muted: #6b6560;
+  --ok: #2C6E49;
+  --radius: 14px;
+  --maxw: 980px;
+  font-size: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Calibri, Arial, sans-serif;
+  color: var(--charcoal);
+  background: var(--white);
+  line-height: 1.55;
+}
+
+a { color: var(--maroon); }
+a:hover { color: var(--maroon-dark); }
+
+.topbar {
+  background: var(--maroon);
+  color: var(--white);
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.topbar .brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.02rem;
+}
+.topbar .brand small {
+  display: block;
+  font-weight: 400;
+  color: var(--gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.topbar nav a {
+  color: var(--cream-tint);
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.92rem;
+}
+.topbar nav a:hover { color: var(--white); text-decoration: underline; }
+
+.hero {
+  background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-dark) 100%);
+  color: var(--white);
+  padding: 2.4rem 1.25rem 2.8rem;
+}
+.hero .wrap { max-width: var(--maxw); margin: 0 auto; }
+.hero .kicker {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+.hero h1 { font-size: 2.1rem; margin: 0 0 0.6rem; }
+.hero p.lede { color: var(--cream-tint); max-width: 62ch; margin: 0; }
+
+.badge {
+  display: inline-block;
+  background: var(--gold-tint);
+  color: var(--maroon-dark);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.badge.on-dark { background: rgba(255,255,255,0.15); color: var(--white); }
+
+.container { max-width: var(--maxw); margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+
+.card {
+  background: var(--cream-tint);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.5rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 2px 10px rgba(29,37,45,0.06);
+}
+.card.gold { background: var(--gold-tint); }
+.card.dark { background: var(--charcoal); color: var(--white); }
+.card.dark a { color: var(--gold); }
+.card h2, .card h3 { margin-top: 0; color: var(--maroon); }
+.card.dark h2, .card.dark h3 { color: var(--gold); }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+@media (max-width: 760px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+h2.section-title {
+  color: var(--maroon);
+  border-bottom: 2px solid var(--gold-tint);
+  padding-bottom: 0.4rem;
+  margin-top: 2.4rem;
+}
+
+.resource-list { list-style: none; padding: 0; margin: 0.5rem 0; }
+.resource-list li {
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.5rem;
+  background: var(--white);
+  border: 1px solid var(--gold-tint);
+  border-radius: 10px;
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+.resource-list .tag {
+  flex: none;
+  background: var(--maroon);
+  color: var(--white);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.checklist { list-style: none; padding: 0; margin: 0.5rem 0; }
+.checklist li { padding: 0.35rem 0; display: flex; gap: 0.6rem; align-items: flex-start; }
+.checklist input[type="checkbox"] { margin-top: 0.3rem; width: 18px; height: 18px; accent-color: var(--maroon); flex: none; }
+
+label.field-label { display: block; font-weight: 700; margin: 1rem 0 0.3rem; color: var(--maroon-dark); }
+.hint { color: var(--muted); font-size: 0.86rem; margin: 0 0 0.3rem; }
+textarea, input[type="text"] {
+  width: 100%;
+  border: 1.5px solid var(--gold);
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+  font-family: inherit;
+  font-size: 0.98rem;
+  background: var(--white);
+  color: var(--charcoal);
+  resize: vertical;
+}
+textarea:focus, input[type="text"]:focus { outline: 2px solid var(--maroon); outline-offset: 1px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--maroon);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover { background: var(--maroon-dark); }
+.btn.secondary { background: transparent; color: var(--maroon); border: 2px solid var(--maroon); }
+.btn.secondary:hover { background: var(--gold-tint); }
+
+.save-status { font-size: 0.85rem; color: var(--ok); margin-left: 0.8rem; }
+
+.phase-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--gold-tint);
+  flex-wrap: wrap;
+}
+.phase-nav a { text-decoration: none; font-weight: 700; }
+
+footer.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.82rem;
+  padding: 2rem 1rem 3rem;
+}
+
+.step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 1rem; margin: 1rem 0; }
+.step { background: var(--white); border: 1px solid var(--gold-tint); border-radius: 12px; padding: 1rem; }
+.step .num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--maroon); color: var(--white); font-weight: 700; margin-bottom: 0.5rem;
+}
+
+.pill-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.pill { background: var(--white); border: 1.5px solid var(--maroon); color: var(--maroon); border-radius: 999px; padding: 0.25rem 0.7rem; font-size: 0.8rem; font-weight: 700; }
+
+/* Print styles: used when downloading the response section as PDF via html2pdf,
+   and also work fine for a plain browser print/Save-as-PDF fallback. */
+@media print {
+  .topbar, .hero .btn, .no-print, .phase-nav, footer.site-footer { display: none !important; }
+  body { background: white; }
+  .card { box-shadow: none; border: 1px solid #ccc; }
+}

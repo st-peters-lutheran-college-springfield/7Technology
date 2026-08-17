@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 10: Testing &amp; Evaluating | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="../index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 10 of 10 · Feeds Folio Sections 9 &amp; 10</span>
+      <h1>Testing &amp; Evaluating Against Success Criteria</h1>
+      <p class="lede">Test your design honestly, document improvements, then step back and evaluate the whole project.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can test your design against your criteria, document specific improvements, and justify your key decisions.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="card">
+      <h3>Testing against your criteria</h3>
+      <p style="margin-top:0;">Go back to the design criteria you wrote in Phase 3. For each one, record <strong>pass / partial / fail</strong> with real evidence — a measurement, a photo, a description of what happened when you tested it. Specifically check: fit, stability, durability, and portability.</p>
+      <p style="margin-bottom:0;"><em>Example:</em> Criterion — "The case fits within a 15 × 15 cm footprint." Result — Pass, measured footprint 14 × 13.5 cm.</p>
+    </div>
+    <div class="card gold">
+      <h3>Evaluating — the final step</h3>
+      <p style="margin-top:0;">Choose your <strong>three most important design decisions</strong> and justify each: what you decided, what alternatives you considered, and why — referencing your persona, materials investigation and testing evidence, not just personal preference.</p>
+      <p style="margin-bottom:0;">Then check your finished design against the assessment's success criteria one last time before submission.</p>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Read</span> <a href="https://guides.lib.berkeley.edu/design" target="_blank" rel="noopener">Design Fundamentals guide (UC Berkeley Library)</a> — a refresher on evaluating design decisions against criteria.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;">Test your design against every criterion from Phase 3 and record the evidence. For anything that didn't fully pass, note the problem, what you changed, and why that fixes it.</p>
+      <p style="margin-bottom:0;">Then write your final reflection (150–200 words): the hardest part of this challenge, what you'd do differently, and one thing you learned about human-centred design.</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label">Testing results (fit, stability, durability, portability)</label>
+      <textarea data-autosave="testing" rows="5" placeholder="Criterion → Pass/Partial/Fail → evidence..."></textarea>
+
+      <label class="field-label">Improvements made (problem → change → why it works)</label>
+      <textarea data-autosave="improvements" rows="4" placeholder="..."></textarea>
+
+      <label class="field-label">Justifying my three key decisions</label>
+      <textarea data-autosave="justifications" rows="5" placeholder="Decision 1: ...&#10;Decision 2: ...&#10;Decision 3: ..."></textarea>
+
+      <label class="field-label">Final reflection (150–200 words)</label>
+      <textarea data-autosave="finalReflection" rows="6" placeholder="Hardest part / what I'd change / what I learned..."></textarea>
+
+      <label class="field-label">Final folio checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> 1. Problem Identification</li>
+        <li><input type="checkbox" data-autosave="chk2"> 2. User Persona Analysis</li>
+        <li><input type="checkbox" data-autosave="chk3"> 3. Investigation of Materials</li>
+        <li><input type="checkbox" data-autosave="chk4"> 4. Design Ideas and Annotated Sketches</li>
+        <li><input type="checkbox" data-autosave="chk5"> 5. Design Criteria (including sustainability)</li>
+        <li><input type="checkbox" data-autosave="chk6"> 6. Manufacturing Decisions</li>
+        <li><input type="checkbox" data-autosave="chk7"> 7. Digital Design (TinkerCad)</li>
+        <li><input type="checkbox" data-autosave="chk8"> 8. Final Design Description</li>
+        <li><input type="checkbox" data-autosave="chk9"> 9. Testing and Refinement</li>
+        <li><input type="checkbox" data-autosave="chk10"> 10. Evaluation and Reflection (this page)</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase10-Testing-Evaluation')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>In Class OneNote, go to your personal section → Sections 9 (Testing and Refinement) and 10 (Evaluation and Reflection).</li>
+        <li>Insert → File Printout, and choose the downloaded PDF.</li>
+        <li>Double-check all ten folio sections are complete before the due date: <strong>31/08/2026, 3:00 pm</strong>.</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">This section pulls everything together — make sure Phases 1–9 are done first. If you're unsure whether your folio is complete, check the checkpoint dates on your task sheet or ask your teacher before the due date. Remember: GenAI tools must not be used within this assessment task.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="09-manufacturing-decisions-final-design.html">← Phase 9</a>
+      <a class="btn" href="../index.html">Back to Hub — All done! →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 5: Design Elements &amp; Principles | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="../index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 5 of 10 · Feeds Folio Sections 4 &amp; 5</span>
+      <h1>Design Elements &amp; Principles</h1>
+      <p class="lede">The building blocks designers use, and the human-centred process that ties this whole unit together.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can apply elements and principles of design to explain how form supports use, and why your shape suits your user.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Elements of design</h3>
+        <p style="margin-top:0;">The "ingredients" you combine:</p>
+        <ul style="margin-bottom:0;">
+          <li><strong>Form</strong> — the overall 3D shape of your CyberPet</li>
+          <li><strong>Shape</strong> — the 2D outlines and profiles that build that form</li>
+          <li><strong>Colour</strong> — sets the mood of your design</li>
+          <li><strong>Texture</strong> — how a surface looks or feels</li>
+        </ul>
+      </div>
+      <div class="card gold">
+        <h3>Principles of design</h3>
+        <p style="margin-top:0;">The "rules" for arranging elements well:</p>
+        <ul style="margin-bottom:0;">
+          <li><strong>Balance</strong> — visual weight distributed sensibly</li>
+          <li><strong>Contrast</strong> — differences that create interest or clarity</li>
+          <li><strong>Emphasis</strong> — drawing attention to the important part (e.g. the light display)</li>
+          <li><strong>Unity</strong> — everything feels like it belongs together</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Human-centred design (simplified)</h3>
+      <div class="step-grid">
+        <div class="step"><div class="num">1</div><strong>Empathise</strong><p style="margin:0.4rem 0 0;">Understand your persona (Phase 2)</p></div>
+        <div class="step"><div class="num">2</div><strong>Define</strong><p style="margin:0.4rem 0 0;">State the problem (Phase 1)</p></div>
+        <div class="step"><div class="num">3</div><strong>Ideate</strong><p style="margin:0.4rem 0 0;">Generate ideas (Phase 8)</p></div>
+        <div class="step"><div class="num">4</div><strong>Prototype</strong><p style="margin:0.4rem 0 0;">Build/model (Phases 7 &amp; 9)</p></div>
+        <div class="step"><div class="num">5</div><strong>Evaluate</strong><p style="margin:0.4rem 0 0;">Test and reflect (Phase 10)</p></div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Guide</span> <a href="https://www.teacheroz.com/apah-elements.pdf" target="_blank" rel="noopener">Elements &amp; Principles of Design — Student Guide (PDF)</a> — clear definitions with visual examples.</li>
+      <li><span class="tag">Guide</span> <a href="https://guides.lib.berkeley.edu/design" target="_blank" rel="noopener">Design Fundamentals guide (UC Berkeley Library)</a> — background reading on how elements and principles work together.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;">Pick two elements (e.g. form and colour) and two principles (e.g. emphasis and balance). For each, explain how you'll use it in your CyberPet design, and why it suits your chosen persona.</p>
+      <p style="margin-bottom:0;">Then write one or two sentences on how your <strong>form</strong> will support your CyberPet's <strong>use</strong> (housing electronics, sitting securely, showing light clearly).</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label">Elements I'm using</label>
+      <textarea data-autosave="elements" rows="3" placeholder="Which two elements, and how you'll use them..."></textarea>
+
+      <label class="field-label">Principles I'm using</label>
+      <textarea data-autosave="principles" rows="3" placeholder="Which two principles, and how you'll use them..."></textarea>
+
+      <label class="field-label">How form supports use</label>
+      <textarea data-autosave="formUse" rows="3" placeholder="How does your shape/form support the CyberPet's job?"></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I can name and define at least four elements/principles of design</li>
+        <li><input type="checkbox" data-autosave="chk2"> I have explained how form supports use in my design</li>
+        <li><input type="checkbox" data-autosave="chk3"> I can name the five human-centred design stages in order</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase05-Design-Elements-Principles')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>In Class OneNote, go to your personal section → Section 4/5 — Design Ideas &amp; Design Criteria.</li>
+        <li>Insert → File Printout, and choose the downloaded PDF.</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">Read the linked guides, then complete the response above independently — no equipment needed. Bring it to your next lesson to check your understanding with your teacher.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="04-exploring-materials.html">← Phase 4</a>
+      <a class="btn" href="06-manufacturing-techniques.html">Phase 6: Manufacturing Techniques →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
