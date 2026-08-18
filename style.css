@@ -1,128 +1,262 @@
-<!DOCTYPE html>
-<html lang="en-AU">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CyberPet for Wellbeing — Flipped Classroom Hub | Year 7 Technologies</title>
-<link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-  <div class="topbar">
-    <a class="brand" href="index.html">St Peters Lutheran College Springfield
-      <small>Year 7 Technologies · Unit 3</small>
-    </a>
-    <nav>
-      <a href="phases/01-the-challenge.html">Start the challenge →</a>
-    </nav>
-  </div>
+/* SPLC Springfield — CyberPet Flipped Classroom — shared styling
+   Brand palette: Charcoal #1D252D, Metallic Gold #BD9B60, Cream 20% #F5E1A4,
+   Maroon #7B2D3E (secondary accent). Body font: Segoe UI. */
 
-  <div class="hero">
-    <div class="wrap">
-      <p class="kicker">Flipped Classroom &amp; Design Challenge</p>
-      <h1>CyberPet for Wellbeing</h1>
-      <p class="lede">Design and make a small desktop CyberPet that uses light and wireless communication to help a teacher understand how their class is feeling — without ever identifying an individual student. Work through the ten design phases below in order, in class or at home.</p>
-    </div>
-  </div>
+:root {
+  --charcoal: #1D252D;
+  --gold: #BD9B60;
+  --cream: #F5E1A4;
+  --maroon: #7B2D3E;
+  --paper: #FAFAF8;
+  --border: #E3DED2;
+  --text-muted: #5B6470;
+}
 
-  <div class="container">
+* { box-sizing: border-box; }
 
-    <div class="card">
-      <span class="badge">Assessment: Unit 3 Assessment 3</span>
-      <h2 style="margin-top:0;">How to use this site</h2>
-      <p>Each phase below matches one part of your <strong>Class OneNote Design Folio</strong> and one classroom lesson. Every phase page has the same structure:</p>
-      <div class="step-grid">
-        <div class="step"><div class="num">1</div><strong>Learn</strong><p style="margin:0.4rem 0 0;">Read the explicit teaching content and open the linked resources.</p></div>
-        <div class="step"><div class="num">2</div><strong>Do</strong><p style="margin:0.4rem 0 0;">Complete the activity for that phase.</p></div>
-        <div class="step"><div class="num">3</div><strong>Respond</strong><p style="margin:0.4rem 0 0;">Type your answers into the response form — it autosaves on this device as you type.</p></div>
-        <div class="step"><div class="num">4</div><strong>Save to OneNote</strong><p style="margin:0.4rem 0 0;">Download your response as a PDF and add it to your personal page in Class OneNote.</p></div>
-      </div>
-      <p class="hint">Missed a lesson, or working ahead? Every page also has an "Absent from class?" note telling you exactly what to do.</p>
-    </div>
+body {
+  margin: 0;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  color: var(--charcoal);
+  background: var(--paper);
+  line-height: 1.55;
+}
 
-    <h2 class="section-title">The ten design phases</h2>
-    <div class="grid-2">
-      <a class="card" style="text-decoration:none; display:block;" href="phases/01-the-challenge.html">
-        <span class="pill">Phase 1 · Week 3</span>
-        <h3>The Design Challenge</h3>
-        <p>What the CyberPet does, who it's for, and the non-negotiable constraints.</p>
-        <p class="hint">→ Folio Section 1: Problem Identification</p>
-      </a>
-      <a class="card gold" style="text-decoration:none; display:block;" href="phases/02-user-needs-personas.html">
-        <span class="pill">Phase 2 · Week 3</span>
-        <h3>User Needs &amp; Wants</h3>
-        <p>Analyse three teacher personas and choose who you're designing for.</p>
-        <p class="hint">→ Folio Section 2: User Persona Analysis</p>
-      </a>
-      <a class="card" style="text-decoration:none; display:block;" href="phases/03-success-criteria.html">
-        <span class="pill">Phase 3 · Week 3</span>
-        <h3>Generating Success Criteria</h3>
-        <p>Turn the design brief into testable design criteria you can check your work against.</p>
-        <p class="hint">→ Folio Section 5 (part): Design Criteria</p>
-      </a>
-      <a class="card gold" style="text-decoration:none; display:block;" href="phases/04-exploring-materials.html">
-        <span class="pill">Phase 4 · Week 4</span>
-        <h3>Exploring Materials</h3>
-        <p>Compare cardboard, felt/leather, plywood, acrylic and 3D-printed parts.</p>
-        <p class="hint">→ Folio Section 3: Investigation of Materials</p>
-      </a>
-      <a class="card" style="text-decoration:none; display:block;" href="phases/05-design-elements-principles.html">
-        <span class="pill">Phase 5 · Week 5</span>
-        <h3>Design Elements &amp; Principles</h3>
-        <p>Form, shape, colour, texture and how they combine to support your persona.</p>
-        <p class="hint">→ Folio Section 4/5: Design Ideas &amp; Criteria</p>
-      </a>
-      <a class="card gold" style="text-decoration:none; display:block;" href="phases/06-manufacturing-techniques.html">
-        <span class="pill">Phase 6 · Weeks 4–6</span>
-        <h3>Manufacturing Techniques</h3>
-        <p>Additive (3D printing) and subtractive (Trotec laser cutting) manufacturing, and safety.</p>
-        <p class="hint">→ Folio Section 6: Manufacturing Decisions</p>
-      </a>
-      <a class="card" style="text-decoration:none; display:block;" href="phases/07-tinkercad-3d-sketching.html">
-        <span class="pill">Phase 7 · Week 4</span>
-        <h3>TinkerCad &amp; 3D Sketching</h3>
-        <p>Introduction to TinkerCad, plus how to sketch your ideas in 3D (isometric basics).</p>
-        <p class="hint">→ Folio Section 7: Digital Design (TinkerCad)</p>
-      </a>
-      <a class="card gold" style="text-decoration:none; display:block;" href="phases/08-sketching-annotating.html">
-        <span class="pill">Phase 8 · Week 5</span>
-        <h3>Sketching &amp; Annotating Ideas</h3>
-        <p>Generate multiple concepts and annotate them so someone else could understand your thinking.</p>
-        <p class="hint">→ Folio Section 4: Design Ideas &amp; Annotated Sketches</p>
-      </a>
-      <a class="card" style="text-decoration:none; display:block;" href="phases/09-manufacturing-decisions-final-design.html">
-        <span class="pill">Phase 9 · Week 6</span>
-        <h3>Final Design &amp; Manufacturing Plan</h3>
-        <p>Select your final idea and document exactly how it will be made.</p>
-        <p class="hint">→ Folio Sections 6 &amp; 8</p>
-      </a>
-      <a class="card gold" style="text-decoration:none; display:block;" href="phases/10-testing-evaluation.html">
-        <span class="pill">Phase 10 · Weeks 7–8</span>
-        <h3>Testing &amp; Evaluating</h3>
-        <p>Test your design against your success criteria, refine it, and reflect.</p>
-        <p class="hint">→ Folio Sections 9 &amp; 10</p>
-      </a>
-    </div>
+h1, h2, h3 { font-weight: 600; line-height: 1.25; }
 
-    <h2 class="section-title">Also useful</h2>
-    <div class="card">
-      <p style="margin-top:0;">These sit alongside this site in the same class resource folder:</p>
-      <ul class="resource-list">
-        <li><span class="tag">Slides</span> <a href="../02-lesson-slides/">Lesson PowerPoint decks, Weeks 1–8</a> — the slides your teacher uses in class, for review or if you were away</li>
-        <li><span class="tag">Folio</span> <a href="../01-onenote-folio-resources/">Class OneNote design folio pages</a> — the ten official folio sections your teacher has posted in OneNote</li>
-      </ul>
-    </div>
+a { color: var(--maroon); }
+a:hover { color: var(--charcoal); }
 
-    <div class="card dark">
-      <h3 style="margin-top:0;">A note on GenAI use</h3>
-      <p>This assessment task does not allow GenAI tools to be used to produce your folio content — see the Authentication Strategies on your task sheet. The response boxes on this site are just a digital way to write and save <em>your own</em> answers; nothing you type here is generated by AI.</p>
-    </div>
+/* Top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background: var(--charcoal);
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+}
+.topbar .brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.topbar .brand small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin-top: 0.1rem;
+}
+.topbar nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.topbar nav a:hover { color: #fff; text-decoration: underline; }
 
-  </div>
+/* Hero banner */
+.hero {
+  background: linear-gradient(135deg, var(--maroon), var(--charcoal));
+  color: #fff;
+  padding: 2.5rem 1.5rem;
+}
+.hero .wrap { max-width: 900px; margin: 0 auto; }
+.hero h1 { font-size: 2rem; margin: 0.4rem 0 0.6rem; }
+.hero .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin: 0;
+}
+.hero .lede { font-size: 1.05rem; color: var(--cream); max-width: 700px; margin: 0 0 1rem; }
+.hero .cta {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--charcoal);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+}
+.hero .cta:hover { background: var(--cream); }
 
-  <footer class="site-footer">
-    St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3 — CyberPet for Wellbeing
-  </footer>
+/* Badges */
+.badge {
+  display: inline-block;
+  background: var(--cream);
+  color: var(--charcoal);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.badge.on-dark { background: rgba(255,255,255,0.15); color: #fff; }
 
-  <script src="assets/app.js"></script>
-</body>
-</html>
+/* Layout */
+.container { max-width: 900px; margin: 0 auto; padding: 1.75rem 1.5rem 3rem; }
+.section-title {
+  margin: 2.2rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--gold);
+  font-size: 1.3rem;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 1rem;
+}
+.card.gold { border-left-color: var(--maroon); background: #FFFBF2; }
+.card.dark { background: var(--charcoal); color: #fff; border-left-color: var(--gold); }
+.card.dark a { color: var(--gold); }
+.card h3 { margin-top: 0; }
+a.card:hover { border-left-color: var(--maroon); box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+
+/* Step grid (How to use this site) */
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+@media (max-width: 640px) {
+  .step-grid { grid-template-columns: 1fr 1fr; }
+}
+.step { text-align: left; }
+.step .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--maroon);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.hint { color: var(--text-muted); font-size: 0.92rem; }
+
+/* Pills */
+.pill, .pill-row .pill {
+  display: inline-block;
+  background: var(--charcoal);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.78rem;
+  margin: 0 0.4rem 0.4rem 0;
+}
+.pill-row { margin: 0.75rem 0; }
+
+/* Resource list */
+.resource-list { list-style: none; margin: 0; padding: 0; }
+.resource-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.resource-list li:last-child { border-bottom: none; }
+.tag {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--charcoal);
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  margin-right: 0.4rem;
+}
+
+/* Response forms */
+.field-label {
+  display: block;
+  font-weight: 600;
+  margin: 1rem 0 0.35rem;
+}
+.field-label:first-of-type { margin-top: 0; }
+input[type="text"], textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.98rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--charcoal);
+  resize: vertical;
+}
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border-color: var(--maroon);
+  box-shadow: 0 0 0 3px rgba(123,45,62,0.12);
+}
+.checklist { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.checklist li { padding: 0.3rem 0; display: flex; align-items: flex-start; gap: 0.5rem; }
+.checklist input[type="checkbox"] { margin-top: 0.28rem; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--maroon);
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+}
+.btn:hover { background: var(--charcoal); }
+.btn.secondary { background: transparent; color: var(--maroon); border: 1px solid var(--maroon); }
+.btn.secondary:hover { background: var(--cream); color: var(--charcoal); border-color: var(--gold); }
+.save-status { font-size: 0.85rem; color: var(--text-muted); }
+
+/* Phase navigation */
+.phase-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 1.5rem;
+}
+
+/* Print — hide interactive/non-content chrome when saving a PDF via browser print */
+@media print {
+  .no-print, .topbar nav, .phase-nav { display: none !important; }
+  body { background: #fff; }
+  .card { border: 1px solid #ccc; box-shadow: none; }
+}

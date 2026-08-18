@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 7: TinkerCad &amp; 3D Sketching | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 7 of 10 · Feeds Folio Section 7</span>
+      <h1>TinkerCad &amp; 3D Sketching</h1>
+      <p class="lede">Before you commit to a final case design, you need two ways to show your ideas in 3D: a digital model in TinkerCad, and quick isometric sketches on paper.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can build a simple 3D model in TinkerCad and draw a basic isometric sketch of an object.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>What is TinkerCad?</h3>
+        <p style="margin-top:0;">TinkerCad is a free, browser-based 3D design tool. You build models by combining simple solid shapes — boxes, cylinders, holes — the same way you'll need to combine shapes to design a CyberPet case.</p>
+        <ul style="margin-bottom:0;">
+          <li>Log in with your school account — no download needed</li>
+          <li>Shapes snap to a grid, so measurements stay accurate</li>
+          <li>A "hole" shape cuts material away — useful for cable slots or LED windows</li>
+        </ul>
+      </div>
+      <div class="card gold">
+        <h3>Isometric sketching basics</h3>
+        <p style="margin-top:0;">An isometric sketch shows an object in 3D using three axes at 120° to each other, so you can see the top, front and side of an object in one drawing.</p>
+        <ul style="margin-bottom:0;">
+          <li>Vertical lines stay vertical</li>
+          <li>The other two sets of lines go at 30° above the horizontal</li>
+          <li>Isometric grid/dot paper makes this much easier than freehand</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Tool</span> <a href="https://www.tinkercad.com/" target="_blank" rel="noopener">TinkerCad</a> — sign in with your school Microsoft account.</li>
+      <li><span class="tag">Tutorial</span> <a href="https://www.tinkercad.com/learn/designs" target="_blank" rel="noopener">TinkerCad Lessons</a> — official beginner lessons; complete "Tinkercad 3D Design Overview" if you're new to it.</li>
+      <li><span class="tag">Guide</span> <a href="https://www.autodesk.com/products/tinkercad/blog/isometric-drawing-guide/" target="_blank" rel="noopener">Isometric Drawing: A Beginner's Guide</a> — how to draw in isometric by hand.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;"><strong>In TinkerCad:</strong> build a simple block model roughly the size of your CyberPet case (within the Phase 1 constraints), and cut one opening for the GlowBit LEDs. Note your model's approximate dimensions below — you don't need a finished design yet.</p>
+      <p style="margin-bottom:0;"><strong>On paper:</strong> draw one isometric sketch of the same block model, labelling its width, depth and height.</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label">My TinkerCad model — approximate dimensions (W × D × H) and what shapes I combined</label>
+      <textarea data-autosave="tinkercadModel" rows="3" placeholder="e.g. 120mm x 100mm x 60mm box, with a 40mm x 15mm hole cut for the LED window..."></textarea>
+
+      <label class="field-label">One thing I found tricky in TinkerCad, and how I solved it</label>
+      <textarea data-autosave="tinkercadTricky" rows="3" placeholder="..."></textarea>
+
+      <label class="field-label">Isometric sketch — describe what you drew (you'll add the actual sketch to OneNote as a photo)</label>
+      <textarea data-autosave="isoSketch" rows="3" placeholder="..."></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I have built a simple block model in TinkerCad within my size constraints</li>
+        <li><input type="checkbox" data-autosave="chk2"> I have cut at least one opening/hole in my model</li>
+        <li><input type="checkbox" data-autosave="chk3"> I have drawn one isometric sketch with labelled dimensions</li>
+        <li><input type="checkbox" data-autosave="chk4"> I understand vertical lines stay vertical and the other lines sit at 30°</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase07-TinkerCad-3D-Sketching')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>Take a photo of your paper isometric sketch, or export a screenshot of your TinkerCad model.</li>
+        <li>In Class OneNote, go to your personal section → Section 7 — Digital Design (TinkerCad), and insert both the PDF and the image(s).</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">TinkerCad works from any browser at home — log in with your school account and complete the activity there. If you don't have isometric paper, sketch on plain paper using a ruler and a 30° set square, or print isometric paper from the guide linked above.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="06-manufacturing-techniques.html">← Phase 6</a>
+      <a class="btn" href="08-sketching-annotating.html">Phase 8: Sketching &amp; Annotating Ideas →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="app.js"></script>
+</body>
+</html>

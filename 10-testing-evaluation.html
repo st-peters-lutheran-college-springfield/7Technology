@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 10: Testing &amp; Evaluating | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 10 of 10 · Feeds Folio Sections 9 &amp; 10</span>
+      <h1>Testing &amp; Evaluating</h1>
+      <p class="lede">A design isn't finished when you finish making it — it's finished when you've checked it actually does what it was meant to do, and reflected honestly on how it went.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can test your design against your own success criteria, and evaluate your design process and outcome.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Testing against success criteria</h3>
+        <p style="margin-top:0;">Go back to the success criteria you wrote in Phase 3. For each one, test your finished (or nearly finished) CyberPet and record a clear pass/partial/fail — with evidence, not just a guess.</p>
+        <ul style="margin-bottom:0;">
+          <li>Test the same way for every criterion so results are fair</li>
+          <li>Where possible, get someone else (a peer or your teacher) to test it too</li>
+          <li>Record exactly what happened, not what you hoped would happen</li>
+        </ul>
+      </div>
+      <div class="card gold">
+        <h3>Evaluating</h3>
+        <p style="margin-top:0;">Evaluating means judging how well your design and your process worked, and what you'd change.</p>
+        <ul style="margin-bottom:0;">
+          <li>What worked well, and why?</li>
+          <li>What didn't meet a criterion, and why not?</li>
+          <li>If you had more time, what specifically would you change?</li>
+          <li>What did you learn about the design process itself?</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Reminder</span> <a href="03-success-criteria.html">Phase 3: Generating Success Criteria</a> — open this in another tab to check your original criteria while you test.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;">Test your CyberPet (or your final design, if it wasn't physically made) against every success criterion from Phase 3. Record the result and evidence for each, then write an honest evaluation of your design and your process.</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label">Testing results — list each success criterion, its result (pass/partial/fail) and your evidence</label>
+      <textarea data-autosave="testingResults" rows="5" placeholder="1. Criterion... Result... Evidence...&#10;2. Criterion... Result... Evidence..."></textarea>
+
+      <label class="field-label">What worked well, and why?</label>
+      <textarea data-autosave="whatWorked" rows="3" placeholder="..."></textarea>
+
+      <label class="field-label">What didn't meet a criterion, and why not?</label>
+      <textarea data-autosave="whatFailed" rows="3" placeholder="..."></textarea>
+
+      <label class="field-label">If you had more time, what specifically would you change?</label>
+      <textarea data-autosave="whatChange" rows="3" placeholder="..."></textarea>
+
+      <label class="field-label">What did you learn about the design process itself?</label>
+      <textarea data-autosave="processReflection" rows="3" placeholder="..."></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I have tested against every success criterion from Phase 3</li>
+        <li><input type="checkbox" data-autosave="chk2"> Each test result has real evidence, not just an opinion</li>
+        <li><input type="checkbox" data-autosave="chk3"> I have written an honest evaluation, including what didn't work</li>
+        <li><input type="checkbox" data-autosave="chk4"> I have reflected on my design process, not just the final product</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase10-Testing-Evaluating')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>In Class OneNote, go to your personal section → Sections 9 (Testing) and 10 (Evaluation).</li>
+        <li>Insert → File Printout, and choose the downloaded PDF (you can add it to both sections).</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">If your physical CyberPet wasn't made or isn't available to test, evaluate your final design (Phase 9) against each success criterion instead, and clearly note in your response that this is a design-stage evaluation.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="09-manufacturing-decisions-final-design.html">← Phase 9</a>
+      <a class="btn" href="index.html">Back to hub →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="app.js"></script>
+</body>
+</html>
