@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 1: The Design Challenge | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html">St Peters Lutheran College Springfield
+      <small>Year 7 Technologies · Unit 3</small>
+    </a>
+    <nav><a href="../index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 1 of 10 · Feeds Folio Section 1</span>
+      <h1>The Design Challenge</h1>
+      <p class="lede">Before you design anything, understand the real problem you're solving — who it's for, and why it matters.</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You can explain, in your own words, the real-world problem this design challenge is asking you to solve.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="card">
+      <h3>Designing for wellbeing</h3>
+      <p>Starting secondary school is a big shift. Many Year 7 students feel shy, anxious or unsure in their first weeks and months — and it isn't always easy for a teacher to notice this in a room of 25–30 students. Teachers want a simple, non-verbal way to understand how their class is feeling so they can respond and support student wellbeing sooner.</p>
+      <p>Your task is to design a <strong>CyberPet</strong>: a small desktop device that sits on a teacher's desk and uses <strong>light</strong> to communicate the general mood of the class — without singling anyone out.</p>
+      <div class="pill-row">
+        <span class="pill">Uses a micro:bit + GlowBit</span>
+        <span class="pill">Communicates mood with light</span>
+        <span class="pill">Wireless &amp; anonymous</span>
+        <span class="pill">Housed in a case you design</span>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card gold">
+        <h3>Why this is a genuine design problem</h3>
+        <ul>
+          <li><strong>Real users</strong> — a student choosing to share a mood, and a teacher trying to read the room</li>
+          <li><strong>Real constraint</strong> — the system must never identify who sent what, or store personal data</li>
+          <li><strong>Real purpose</strong> — supporting classroom wellbeing without adding pressure or surveillance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Non-negotiable constraints</h3>
+        <ul>
+          <li>Must be one complete unit (micro:bit + GlowBit + battery pack)</li>
+          <li>Must sit securely on a desk, be sturdy, portable, and protect the electronics</li>
+          <li>Max footprint 15 × 15 cm, max height 20 cm, must fit in a school bag</li>
+          <li>Must NOT identify individuals, store personal data, or track mood over time</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Read</span> <a href="https://ischool.syracuse.edu/what-is-human-centered-design/" target="_blank" rel="noopener">What is Human-Centred Design?</a> — the design approach this whole unit follows: starting with real people's needs, not just what looks good.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;"><strong>Write a problem statement in your own words.</strong> A strong problem statement answers three questions:</p>
+      <div class="step-grid">
+        <div class="step"><div class="num">1</div><strong>Who?</strong><p style="margin:0.4rem 0 0;">Who is this for — the student sending the signal, and the teacher receiving it?</p></div>
+        <div class="step"><div class="num">2</div><strong>What?</strong><p style="margin:0.4rem 0 0;">What difficulty do they currently face?</p></div>
+        <div class="step"><div class="num">3</div><strong>Why?</strong><p style="margin:0.4rem 0 0;">Why does solving it matter?</p></div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label" for="problem-statement">My problem statement</label>
+      <p class="hint">"[User] needs a way to [do something] because [reason], but currently [what makes this hard]."</p>
+      <textarea id="problem-statement" data-autosave="problemStatement" rows="4" placeholder="Write your own problem statement here..."></textarea>
+
+      <label class="field-label" for="reflection">Reflection: why might a non-verbal, anonymous way of sharing feelings be safer or easier for some students than speaking up directly?</label>
+      <textarea id="reflection" data-autosave="reflection" rows="4" placeholder="3–4 sentences..."></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I can explain what the CyberPet system does, in one or two sentences</li>
+        <li><input type="checkbox" data-autosave="chk2"> I understand the system must stay anonymous — no names, no stored data, no individual tracking</li>
+        <li><input type="checkbox" data-autosave="chk3"> I have written my own problem statement above</li>
+        <li><input type="checkbox" data-autosave="chk4"> I understand this is a physical product, not just code</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase01-The-Challenge')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Click <strong>Download my response as PDF</strong> above — it saves to your Downloads folder.</li>
+        <li>Open <strong>Class OneNote</strong> and go to your personal student section, then Section 1 — Problem Identification.</li>
+        <li>Go to <strong>Insert → File Printout</strong> (or drag the PDF straight onto the page) and choose the PDF you just downloaded.</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">If you missed the Week 3 launch lesson, read this page fully, then check the Assessment Task page in Class OneNote for the full design brief, constraints and marking guide before starting Phase 2.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="../index.html">← Hub</a>
+      <a class="btn" href="02-user-needs-personas.html">Phase 2: User Needs &amp; Wants →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

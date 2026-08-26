@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 4: Exploring Materials | CyberPet for Wellbeing</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html">St Peters Lutheran College Springfield<small>Year 7 Technologies · Unit 3</small></a>
+    <nav><a href="../index.html">← All phases</a></nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="badge on-dark">Phase 4 of 10 · Feeds Folio Section 3</span>
+      <h1>Exploring Materials</h1>
+      <p class="lede">Every material has different properties and purposes. Choose ones suited to your persona and the CyberPet's function.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="margin-top:0;">Learning intention</h2>
+      <p style="margin-bottom:0;">You understand that materials have different properties and purposes, and you can select materials suited to your chosen persona and the CyberPet's function.</p>
+    </div>
+
+    <h2 class="section-title">Explicit teaching</h2>
+    <div class="card">
+      <p style="margin-top:0;">Your CyberPet must be made from one or more <strong>approved materials only</strong>: cardboard, felt/leather (synthetic or recycled preferred), plywood, acrylic (teacher-approved), or 3D-printed components.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card gold">
+        <h3>Cardboard</h3>
+        <p style="margin:0;">✔ Recyclable, easy to prototype, low cost<br>✕ Low durability, weakens with handling</p>
+      </div>
+      <div class="card">
+        <h3>Felt / leather</h3>
+        <p style="margin:0;">✔ Soft, calming, adds comfort<br>✕ Needs structural support underneath</p>
+      </div>
+      <div class="card">
+        <h3>Plywood</h3>
+        <p style="margin:0;">✔ Durable, laser-cuttable, precise<br>✕ Higher resource use, needs tool access</p>
+      </div>
+      <div class="card gold">
+        <h3>Acrylic &amp; 3D-printed parts</h3>
+        <p style="margin:0;">✔ Precise, repeatable, can be transparent/coloured<br>✕ Acrylic needs approval; 3D printing is slower and uses plastic filament</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Linked resources</h2>
+    <ul class="resource-list">
+      <li><span class="tag">Datasheets</span> <a href="https://www.troteclaser.com/en-us/helpcenter/downloads/datasheets/material-datasheets" target="_blank" rel="noopener">Trotec material safety &amp; technical datasheets</a> — see how plywood and acrylic are actually rated for laser cutting.</li>
+    </ul>
+
+    <h2 class="section-title">Activity</h2>
+    <div class="card">
+      <p style="margin-top:0;">Rate at least two materials out of 5 against three questions: does it suit your persona's feel, is it durable enough for daily desk use and being carried between classrooms, and is it a responsible material choice?</p>
+      <p style="margin-bottom:0;">Then explain the difference between <strong>additive</strong> manufacturing (e.g. 3D printing — building up material) and <strong>subtractive</strong> manufacturing (e.g. laser cutting — removing material from a larger piece). You'll need to understand both (see Phase 6).</p>
+    </div>
+
+    <h2 class="section-title">Your response</h2>
+    <div id="response-section" class="card">
+      <label class="field-label" for="student-name">Your name</label>
+      <input type="text" id="student-name" data-autosave="studentName" placeholder="First name and surname">
+
+      <label class="field-label">Material rating 1</label>
+      <textarea data-autosave="mat1" rows="3" placeholder="Material: ... / Persona fit (/5): ... / Durability (/5): ... / Sustainability (/5): ... — why?"></textarea>
+
+      <label class="field-label">Material rating 2</label>
+      <textarea data-autosave="mat2" rows="3" placeholder="Material: ... / Persona fit (/5): ... / Durability (/5): ... / Sustainability (/5): ... — why?"></textarea>
+
+      <label class="field-label">Additive vs. subtractive manufacturing — in my own words</label>
+      <textarea data-autosave="addSub" rows="3" placeholder="Explain the difference, and which approach suits which part of your design."></textarea>
+
+      <label class="field-label">Checklist</label>
+      <ul class="checklist">
+        <li><input type="checkbox" data-autosave="chk1"> I can name all five approved materials</li>
+        <li><input type="checkbox" data-autosave="chk2"> I have rated at least two materials against my persona</li>
+        <li><input type="checkbox" data-autosave="chk3"> I can explain additive vs. subtractive manufacturing</li>
+        <li><input type="checkbox" data-autosave="chk4"> I understand plain cardboard alone probably won't meet the durability requirement</li>
+      </ul>
+    </div>
+
+    <div class="no-print" style="margin: 1rem 0;">
+      <button class="btn" id="pdf-btn" onclick="downloadResponsePDF('response-section','Phase04-Exploring-Materials')">⬇ Download my response as PDF</button>
+      <button class="btn secondary" onclick="printPage()">Print / Save as PDF instead</button>
+      <span class="save-status" id="save-status" style="opacity:0.55;">Autosaves as you type</span>
+    </div>
+
+    <div class="card gold no-print">
+      <h3 style="margin-top:0;">Save this to OneNote</h3>
+      <ol>
+        <li>Download your response as a PDF (button above).</li>
+        <li>In Class OneNote, go to your personal section → Section 3 — Investigation of Materials.</li>
+        <li>Insert → File Printout, and choose the downloaded PDF.</li>
+      </ol>
+    </div>
+
+    <div class="card dark no-print">
+      <h3 style="margin-top:0;">Absent from class?</h3>
+      <p style="margin-bottom:0;">If you missed a hands-on materials-handling lesson, complete the rating table from this page, then ask your teacher for five minutes with the material samples at the start of your next lesson.</p>
+    </div>
+
+    <div class="phase-nav">
+      <a class="btn secondary" href="03-success-criteria.html">← Phase 3</a>
+      <a class="btn" href="05-design-elements-principles.html">Phase 5: Design Elements &amp; Principles →</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">St Peters Lutheran College Springfield — Year 7 Technologies, Unit 3</footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
